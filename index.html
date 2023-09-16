@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <main class="container">
+        <nav class="navbar">
+            <input type="color" class="colorPick" id="colorPick">
+            <select name="mode" id="mode" class="modePick">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="generate-btn" id="generate-btn">Get color scheme</button>
+        </nav>
+        <section class="colors">
+            <div class="rec-color" id="rec-color1"></div>
+            <div class="rec-color" id="rec-color2"></div>
+            <div class="rec-color" id="rec-color3"></div>
+            <div class="rec-color" id="rec-color4"></div>
+            <div class="rec-color" id="rec-color5"></div>
+        </section>
+        <footer class="footer">
+            <div class="hexCode" id="hexCode1"></div>
+            <div class="hexCode" id="hexCode2"></div>
+            <div class="hexCode" id="hexCode3"></div>
+            <div class="hexCode" id="hexCode4"></div>
+            <div class="hexCode" id="hexCode5"></div>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
